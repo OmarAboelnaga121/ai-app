@@ -16,9 +16,9 @@ export class AiService {
         this.genAI = new GoogleGenerativeAI(apiKey);
 
         this.model = this.genAI.getGenerativeModel({
-            model: 'gemini-2.5-flash',
-            generationConfig: { responseMimeType: 'application/json' },
-        });
+            model: 'gemini-2.5-flash-lite',
+            systemInstruction: "You are a helpful AI assistant. Use well-structured Markdown to format your responses. Use headers, bold text, and lists where appropriate to make information easy to read. Avoid large blocks of unformatted text.",
+        }, { apiVersion: 'v1beta' });
     }
 
     async generateContent(prompt: string): Promise<string> {
