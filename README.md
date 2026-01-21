@@ -1,4 +1,4 @@
-# AI Assistant (Edu-Flex) - Educational AI Chat Application
+# AI Assistant - Educational AI Chat Application
 
 A modern, full-stack AI chat application built for educational purposes. This project demonstrates how to integrate Google's Gemini AI into a web application using a modern tech stack.
 
